@@ -1,17 +1,18 @@
 import React from "react";
 
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { MaterialIcons } from 'expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 
 import Home from './pages/Home';
-import Busca from './pags/Busca';
-import Perfil from './pags/Perfil';
-import Pedidos from './pags/Pedidos';
-import Carteira from './pags/Carteira';
+import Busca from './pages/Busca';
+import Perfil from './pages/Perfil';
+import Pedidos from './pages/Pedidos';
+import Carteira from './pages/Carteira';
 
 const BottomTab = createBottomTabNavigator();
+const perfilStack = createStackNavigator()
 
 export default function Routes() {
     return (
@@ -37,6 +38,7 @@ export default function Routes() {
                     ),
                 }}
                 />
+                
             </BottomTab.Navigator>
         </NavigationContainer>
     )
