@@ -17,6 +17,8 @@ const styles = StyleSheet.create({
   container: {
     paddingVertical: 10,
     paddingHorizontal: 20,
+    alignItems: 'center',
+    textAlign: 'center',
   },
   menuEndereco: {
     flexDirection: 'row',

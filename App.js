@@ -7,7 +7,7 @@ import Routes from './src/routes'
 export default function App() {
   return (
     <Fragment>
-      <StatusBar style="auto"/>
+      <StatusBar style="auto" />
       <Routes />
     </Fragment>
   );
